@@ -1,0 +1,124 @@
+#container{
+    height: 400px;
+    text-align: center;
+}
+
+#login-opt{
+    background-color: white;
+    border-radius: 15px;
+    height: 150px;
+    width: 150px;
+    float: left;
+    border: solid 1px grey;
+}
+
+#login-opt:hover{
+    height: 152px;
+    width: 152px;
+    opacity: 0.95;
+    cursor: pointer;
+}
+
+#register-opt:hover{
+    height: 152px;
+    width: 152px;
+    opacity: 0.95;
+    cursor: pointer;
+}
+
+#register-opt{
+    background-color: white;
+    border-radius: 15px;
+    height: 150px;
+    width: 150px;
+    float: left;
+    border: solid 1px grey;
+    color: limegreen;
+}
+
+#top{
+    padding-top: 100px;
+    clear: both;
+}
+
+#center{
+    display: table;
+    margin: 0 auto;
+    color: lightseagreen;
+    font-size: 40px;
+    min-width: 370px;
+}
+
+#login-form{
+    display: none;
+    font-size: 14px;
+    color: black;
+    text-align: left;
+    min-width: 370px;
+}
+
+#register-form{
+    display: none;
+    font-size: 14px;
+    color: black;
+    text-align: left;
+    min-width: 370px;
+}
+
+
+#login-form input{
+    width: 200px;
+    border-radius: 5px;
+}
+
+#register-form input{
+    width: 200px;
+    border-radius: 5px;
+}
+
+#submit-login{
+    border: none;
+    background-color: lightseagreen;
+    width: 25px;
+}
+
+#submit-login:hover{
+    opacity: 0.8;
+}
+
+#submit-register{
+    border: none;
+    background-color: forestgreen;
+    width: 25px;
+}
+
+#submit-login:hover{
+    opacity: 0.8;
+}
+
+.error{
+    font-size: 12px;
+    color: red;
+}
+
+.loader {
+    border: 3px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 3px solid grey;
+    width: 15px;
+    height: 15px;
+    animation: spin 0.8s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+#center-choice{
+    min-width: 370px;
+}
+
+#login-form a:hover{
+    cursor: pointer;
+}

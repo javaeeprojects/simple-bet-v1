@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="css/index-style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="index-script.js"></script>
+    <script src="/js/angular.min.js"></script>
+    <title>Home</title>
+</head>
+<body style="margin: 0">
+
+<div id="container">
+    <div id="top">
+    </div>
+
+    <div id="center">
+            <form id="login-form">
+                USERNAME<br> <input id="username" name="username"><br><br>
+                PASSWORD<br> <input id="password" type="password" name="password"><br><br>
+                <input id="submit-login" type="submit" value="SIGN IN"><br><br>
+                <div style="display: none" class="loader"></div>
+                <p id="login-error" class="error"></p>
+                <a onclick="showRegisterForm()">Don't have an account? Join to us now!</a>
+            </form>
+
+        <form id="register-form">
+            E-MAIL ADDRESS<br> <input id="register-username"><br>
+            PASSWORD<br> <input id="register-password" type="password"><br>
+            REPEAT PASSWORD<br> <input id="repeat-password" type="password"><br><br>
+            <input id="submit-register" type="submit" value="SIGN UP"><br><br>
+            <div style="display: none" class="loader"></div>
+            <p id="register-error" class="error"></p>
+        </form>
+
+        <div id="center-choice">
+            <div id="login-opt" onclick="showLoginForm()">
+				<span style="padding: 30px;" class="glyphicon glyphicon-user"/>
+				<p style="color: black;font-weight: bold;font-size: 17px; padding-top: 10px;">LOGIN</p>
+            </div>
+
+            <div style="min-height: 150px;min-width:50px; float:left;"></div>
+
+            <div id="register-opt" onclick="showRegisterForm()">
+				<span style="padding: 30px;"class="glyphicon glyphicon-user"/>
+				<p style="color: black;font-weight: bold;font-size: 17px; padding-top: 10px;">REGISTER</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
